@@ -3,17 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TopNavComponent } from './layout/top-nav/top-nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
     BrowserAnimationsModule
   ],
   providers: [],
