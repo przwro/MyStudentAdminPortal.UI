@@ -1,18 +1,2 @@
 <app-top-nav></app-top-nav>
-
-<form (ngSubmit)="addGame()">
-  <input name="gamename" [(ngModel)]="gameName" type="text">
-  <br /><br />
-  <input name="gameyear" [(ngModel)]="gameYear" type="number">
-  <br /><br />
-  <input type="submit" value="Add game">
-</form>
-
-<ul id="games">
-  <li *ngFor="let game of games">
-    <ul>
-      <li>{{game.name}}</li>
-      <li>{{game.year}}</li>
-    </ul>
-  </li>
-</ul>
+<router-outlet></router-outlet>

@@ -9,11 +9,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GamesComponent } from './games/games.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavComponent
+    TopNavComponent,
+    GamesComponent
   ],
   imports: [
     BrowserModule,
