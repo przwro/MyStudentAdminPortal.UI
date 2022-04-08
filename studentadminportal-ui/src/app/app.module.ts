@@ -10,12 +10,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GamesComponent } from './games/games.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    GamesComponent
+    GamesComponent,
+    ReactiveFormComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { GamesComponent } from './games/games.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
